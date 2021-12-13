@@ -10,15 +10,15 @@ st.set_page_config(page_title = "Formula One Dashboard",
                    page_icon = ":bar_chart:",
                    layout = 'wide')
 
-race_year = pd.read_csv("C:\\Users\\33761\\Desktop\\Projets Perso\\Formula One Dashboard\\Race_Year.csv")
+race_year = pd.read_csv("Race_Year.csv")
 race_year = race_year.drop(race_year[race_year.year == 2021].index)
-constructors = pd.read_csv("C:\\Users\\33761\\Desktop\\Projets Perso\\Formula One Dashboard\\constructors.csv")
-constructor_standings = pd.read_csv("C:\\Users\\33761\\Desktop\\Projets Perso\\Formula One Dashboard\\constructor_standings.csv")
-drivers = pd.read_csv("C:\\Users\\33761\\Desktop\\Projets Perso\\Formula One Dashboard\\drivers.csv")
+constructors = pd.read_csv("constructors.csv")
+constructor_standings = pd.read_csv("constructor_standings.csv")
+drivers = pd.read_csv("drivers.csv")
 drivers['counter'] = 1
 drivers['delta color'] = np.where(drivers['delta'] < 0, "#FF1801", '#00FF00')
-drivers_standing = pd.read_csv("C:\\Users\\33761\\Desktop\\Projets Perso\\Formula One Dashboard\\driver_standings.csv")
-drivers_infos = pd.read_csv("C:\\Users\\33761\\Desktop\\Projets Perso\\Formula One Dashboard\\drivers_infos.csv")
+drivers_standing = pd.read_csv("driver_standings.csv")
+drivers_infos = pd.read_csv("drivers_infos.csv")
 
 
 
